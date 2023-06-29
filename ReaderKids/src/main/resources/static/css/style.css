@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.index {
+    /* background:linear-gradient(90deg, #d1f0c8 0%, #a9daac 100% ); */
+    background: linear-gradient(90deg,#65ffc1c4 0%, rgba(230, 178, 200, 0.699) 100%); /* Adicionei para ver no codigo do luca*/
+    width: 100%;
+    height: 100%;
+}
+.home_um{
+    margin-right:8px;
+    margin-left:8px;
+}
+.titulo-séries{
+    color:ghostwhite;
+    text-align: center;
+    font-size: medium;
+}
+.abas{
+    display: flex;
+    justify-content: center;
+}
+.titulo{
+    color:ghostwhite;
+    text-align: center;
+    margin-top: 4px ;
+}
+.tituloo{
+    color:ghostwhite;
+    text-align: left;
+    margin-top: 4px ;
+}
+.anunciar{
+    text-align: center;
+}
+/*.quemsomos {
+    background-color: #000;
+    background-image: url("../imagens/1254.jpg");
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+}*/
+/*Menu de Navegação*/
+/*#menu-h{
+    position: fixed;
+    width: 100%;
+}*/
+#menu-h ul{
+padding:0 ;
+background-color:#000;
+}
+#menu-h ul li{
+    display: inline;
+    position: relative;
+   /* margin:15px 0px 0px 0px;*/
+}
+#menu-h ul li  a {
+    color: ghostwhite;
+    padding: 20px;
+    display: inline-block;
+    transition: background .3s;/*Da uma suavidade na troca das cores*/
+}
+#menu-h ul li a:hover{
+    background-color:#340754;
+    color:#8F28D9;
+} 
+#menu-h ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+#menu-h ul li:hover ul {
+    display: block;
+    float: right;
+}
+#menu-h ul ul li a {
+    display: block;
+}
+.perfil{
+    left:86%;
+}
+.logo{
+ padding: 0;
+ margin: 0;
+ display: flex;
+ 
+}
+/*Fim do Menu de Navegação*/
+/*Barra de Pesquisa*/
+.col-100{
+    width:100% ;
+    float: left;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+}
+.busca {
+    text-align: center;
+    width: 30%;
+   float: left;
+}
+.busca input{
+    background-image: url('../imagens/search.png');
+    background-repeat: no-repeat;
+    height: 10px;
+    padding: 12px;
+    margin-top: 10px;
+    background-position: 96%;
+    border: 1px solid #020202;
+    border-radius: 15px;
+}
+/*Fim Barra de Pesquisa*/
+/*Ínicio Página de Série e FIlme*/
+.quadro_principal{
+    background-color: #e4a22891;
+    border-radius:  5px; 
+    margin:15px 15px 15px 15px;
+    padding: 15px;
+}
+.destaque{
+    border-radius: 10px;
+    max-width: 100%; /*Propriedade Responsavel por deixar a imagem responsivel*/
+}
+.texto_principal{
+    text-align: justify;
+    color:ghostwhite;
+    font-size: medium;
+    margin-top: 15px;
+}
+.acesso{
+    display: flex;
+    justify-content: baseline;
+    float: left;
+    margin: 10px 5px 0 5px;
+}
+.sub-main{
+    background-color:  rgba(0, 0, 0, 0.5);
+    width: 96%;
+    margin:0px 15px 0px 15px;
+    padding:10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: baseline;
+}
+.video{
+    max-width: 50%;
+    color:ghostwhite;
+    border-radius: solid 5px;
+    padding: 0px 13px 0px 0px;
+}
+.titulo-video{
+    margin-bottom:15px;
+    max-width: 100%;
+    border-bottom:3px solid #340754;
+    color:ghostwhite;
+    text-align: center;
+}
+.por-que-ass{
+    max-width: 49%;
+    color:ghostwhite;
+}
+.titulo-por-que-ass{
+    text-align: center;
+    margin-bottom:15px;
+    max-width: 100%;
+    border-bottom:3px solid #340754;
+    color:ghostwhite;
+    text-transform: uppercase;
+}
+.texto-pq-ass{
+    font-size: larger;
+}
+/*Fim Página de Série e FIlme*/
+/*.linear{
+    height: 200px;
+    width: 1345px;
+    background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.8),rgb(0, 0, 0 ));
+}*/
+/*Página De Login*/
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-login h1{
+    font-size: 2vw;
+    color: #000;
+}
+.left-login-image{
+    width:30vw ;
+}
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color:#e4a228f8;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #a2d3bf;
+}
+.card-login h1{
+    color: #000;
+    font: weight 600px; 
+    margin: 0;
+}
+.textfield{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.textfield input{
+    width: 100%;
+    border: none;
+    border-radius: 10px; 
+    padding: 15px;
+    background-color: #fff;
+    color:#000;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+.textfield label{
+    color:#000;
+    margin:10px;
+}
+.textfield input::placeholder{
+    color: #000;
+}
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #201b2c;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #6c0a7952;
+    background: #a2d3bf;
+}
+.a-login{
+    color: #000;
+    margin-left: 10px;
+}
+/*Fim pagina de Login*/
+/*Página de Cadastro*/
+.main-cadastro{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.right-cadastro{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.right-cadastro h1{
+    font-size: 2vw;
+    color: #000;
+}
+.right-cadastro-image{
+    width:30vw ;
+}
+.left-cadastro{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-cadastro{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color:#9CB4FF;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #9CB4FF;
+}
+.card-cadastron h1{
+    color: ghostwhite;
+    font: weight 700px; ;
+    margin: 0;
+}
+.btn-cadastro{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #9CB4FF;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #9CB4FF;
+}
+/*Fim das Página de Cadastro*/
+/*Rodapé das Páginas*/
+.rodape{
+    background-color:#32005c66 ;
+    padding: 30px;
+    border-radius: 5px;
+    margin:15px 15px 15px 15px;
+    text-align: center;
+}
+.rodape a{
+    background-color:#1c0030d2;
+    color:ghostwhite;
+    padding: 10px 20px;
+    border-radius:30px;
+    text-transform: uppercase;
+}
+.rodape a:hover{
+    color:ghostwhite;
+    background-color:rgb(0, 0, 0) ;
+}
+.assinatura{
+    color:ghostwhite;
+    text-align: center;
+    font-size: medium;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/*Fim rodape*/
+    @media (min-width:960px){
+        .quadro_principal article{
+              display: flex;
+        }
+        .destaque{
+            width: 480px;
+            margin-right: 15px;
+        }
+        #container{
+            max-width: 1500px;
+        }
+    }
